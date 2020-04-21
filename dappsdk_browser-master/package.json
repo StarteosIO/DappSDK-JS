@@ -1,0 +1,30 @@
+{
+    "name": "dappsdk_browser",
+    "version": "1.0.3",
+    "description": "dappsdk_browser",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "./node_modules/.bin/webpack --config ./webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitee.com/yuneng/dappsdk_browser.git"
+    },
+    "keywords": [
+        "dapp",
+        "dappsdk"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "babel-loader": "^8.0.2",
+        "webpack": "^4.17.2",
+        "webpack-cli": "^3.1.0"
+    }
+}
