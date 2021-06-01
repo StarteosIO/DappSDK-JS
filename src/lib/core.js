@@ -11,8 +11,7 @@ function getDeviceType(){
     // 可能原因: 
     // 1. 环境为普通浏览器或者node
     // 2. 钱包版本过低
-    console.error(`Error: Unknown environment,please open it in wallet's browser, 
-    未知环境, 请在钱包浏览器下打开.`)
+    console.error(`Error: Unknown environment,please open it in wallet's browser`)
   }
 }
 
@@ -26,9 +25,9 @@ const sdk = {
 // sdk结构, 分为两层, 外层对应文档内的命名空间(namespace), 内层对应命名空间内的方法,
 // 遍历此结构, 并调用下面定义的函数生成函数(funcGen)可生成整个api
 const tree = {
-  system: ['getSdkInfo', 'getLanguageSetting', 'getSymbol'],
+  system: ['getSdkInfo', 'getLanguageSetting', 'getSymbol', 'getWalletVersion'],
   gui: ['changeFullScreen', 'changeStatusBar', 'showToast', 'showAlert', 'showDialog', 'setClipboard', 'scanQRCode', 'showProgress', 'hideProgress','share'],
-  customer: ['getCurrentWalletType', 'checkFingerprintPayment'],
+  customer: ['getCurrentWalletType', 'checkFingerprintPayment','setCurrentWalletType','getWalletAccount'],
   eos: ['getCurrentWalletAccount', 'getCurrentBalance', 'getCurrentAccountInfo', 'getWalletAccounts', 'getBalance', 'getAccountInfo', 'transfer', 'getTransactionRecord'],
   bos: ['getCurrentWalletAccount', 'getCurrentBalance', 'getCurrentAccountInfo', 'getWalletAccounts', 'getBalance', 'getAccountInfo', 'transfer', 'getTransactionRecord'],
   eth: []
