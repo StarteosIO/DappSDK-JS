@@ -49,7 +49,7 @@
 ES-Module:
 
 ```js
-import dappSDK from "dappsdk";
+import dappSDK from "st-dapp-sdk-js";
 
 dappSDK.gui.showToast({ message: "Hello World!", delay: 1000 });
 ```
