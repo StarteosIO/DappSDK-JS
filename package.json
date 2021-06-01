@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://git.starteos.io/stwallet/fe/STDapp-SDK-JS"
+        "url": "https://github.com/StarteosIO/DappSDK-JS"
     },
     "keywords": [
         "dapp",
