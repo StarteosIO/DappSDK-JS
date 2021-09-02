@@ -44,7 +44,7 @@
 
 ## 安装
 
-`npm install dappsdk`
+`npm install st-dapp-sdk-js -S`
 
 ES-Module:
 
